@@ -13,6 +13,13 @@ var pageView=(function ($){
 
         var _height=parseInt($("body").height())+100;
         var _dheight=_height/2+560;
+
+        var tween=TweenMax.to("#js-static-ani",1,{
+            opacity:.2,
+            ease:Linear.easeNone
+        })
+
+
         var scenePin=new ScrollMagic.Scene({
 
             triggerElement: "#trigger-pin",
@@ -21,6 +28,7 @@ var pageView=(function ($){
             triggerHook:"onLeave"
 
         })
+            .setTween(tween)
             .setPin("#js-static-ani")
             .setClassToggle("#js-static-ani", "pin")
             .addTo(controller);

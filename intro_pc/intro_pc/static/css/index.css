@@ -512,7 +512,7 @@ start{
     height: 30px;
     overflow: hidden;
     position: absolute;
-    bottom:20px;
+    bottom:-48px;
     left: 50%;
     margin-left: -11px;
 
@@ -533,8 +533,8 @@ start{
 
     width: 20px;
     height: 20px;
-    border-right:solid 1px #333;
-    border-bottom:solid 1px #333;
+    border-right:solid 1px #f9c500;
+    border-bottom:solid 1px #f9c500;
 
     opacity:1;
 
