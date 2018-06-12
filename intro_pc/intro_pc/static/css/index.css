@@ -434,14 +434,22 @@ span.span-row{font-size:22px;}
     color:#616e80;
 }
 
-#js-sys{
+/*#js-sys{
     display: inline-block;
-    padding:20px 0;
+    padding:0;
+    margin:40px 0;
+
     font-size:24px;
     padding-right:24px;
     text-decoration: none;
     position: relative;
     color:#32aaff;
+
+    border:solid 1px #32aaff;
+
+    line-height: 48px;
+    text-align: center;
+    width:220px;
 
     z-index:999;
     cursor:pointer;
@@ -455,8 +463,48 @@ span.span-row{font-size:22px;}
     content:" ";
     position: absolute;
     top:50%;
-    right:8px;
+    right:36px;
     margin-top:-8px;
+    width:10px;
+    height:16px;
+    background-image:url(../images/icon_arrow_right.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center center;
+}*/
+
+
+#js-sys{
+    display: inline-block;
+    padding:20px 0;
+    padding-bottom:0;
+    margin-bottom:20px;
+
+    font-size:30px;
+    padding-right:24px;
+    text-decoration: none;
+    position: relative;
+    color:#32aaff;
+
+    border-bottom:solid 1px #32aaff;
+
+    z-index:999;
+    cursor:pointer;
+}
+#js-sys:hover{
+
+    color: #309fee;
+}
+#js-sys:after{
+    display: block;
+    content:" ";
+    position: absolute;
+   /* top:50%;
+    margin-top:-8px;*/
+
+    bottom:15px;
+    right:5px;
+
     width:10px;
     height:16px;
     background-image:url(../images/icon_arrow_right.png);

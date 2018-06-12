@@ -28,10 +28,21 @@ var pageView=(function ($){
             triggerHook:"onLeave"
 
         })
-            .setTween(tween)
             .setPin("#js-static-ani")
             .setClassToggle("#js-static-ani", "pin")
             .addTo(controller);
+
+        var scenePin2=new ScrollMagic.Scene({
+
+            triggerElement: "#trigger-pin",
+            duration: _dheight-300,
+
+            triggerHook:"onLeave"
+
+        })
+            .setTween(tween)
+            .addTo(controller);
+
 
         var sceneNext=new ScrollMagic.Scene({
 
